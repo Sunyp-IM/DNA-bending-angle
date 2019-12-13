@@ -25,5 +25,7 @@ Usage
        python find_dna_axis.py dna1_psd.pdb
     This script will generate a dna1_axis.pml file which can be visualized in pymol
 (8) repeat the above steps to fit axis for other dna (for example, dna2)
+(9) run the script bend_angle.py
+       python bend_angle.py dna1_axis.pml dna2_axis.pml
     
 
