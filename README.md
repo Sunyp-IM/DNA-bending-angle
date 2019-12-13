@@ -16,11 +16,14 @@ Usage:
   
 Usage
 (1) load the DNA in pymol; 
-(2) run the "import center_of_mass" command in the pymol command; 
-(3) select the C6 and N9 atoms in a nucleotide pair; 
-(4) run the "com sele" command in the pymol command to create a psuedoatom at the center of mass of the selected C6 and N9 atoms;
-(5) create psuedoatoms for each nucleotide pairs; 
-(6) save the the psuedoatom coordinates as a pdb file (dna1_psd.pdb);
-(7) fit a line with the psuedoatom coordinates by running the find_dna_axis.py script.
+(2) run the "import center_of_mass" command in the pymol command
+(3) select the C6 and N9 atoms in a nucleotide pair
+(4) run the "com sele" command in the pymol command to create a psuedoatom at the center of mass of the selected C6 and N9 atoms
+(5) create psuedoatoms for each nucleotide pairs
+(6) save the the psuedoatom coordinates as a pdb file (dna1_psd.pdb)
+(7) fit a line with the psuedoatom coordinates by running the find_dna_axis.py script in linux shell.
+       python find_dna_axis.py dna1_psd.pdb
+    This script will generate a dna1_axis.pml file which can be visualized in pymol
+(8) repeat the above steps to fit axis for other dna (for example, dna2)
     
-find_dna_axis.py 
+
